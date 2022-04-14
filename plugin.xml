@@ -1,2 +1,20 @@
 <?xml version='1.0' encoding='utf-8'?>
-<plugin id="com.cordova.wswPlugin" version="1.0.0" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android"><name>wswPlugin</name><js-module name="wswPlugin" src="www/wswPlugin.js"><clobbers target="wswPlugin" /></js-module><platform name="ios"><config-file parent="/*" target="config.xml"><feature name="wswPlugin"><param name="ios-package" value="wswPlugin" /></feature></config-file><source-file src="src/ios/wswPlugin.m" /></platform></plugin>
+<plugin id="com.cordova.wswPlugin" version="1.0.0"
+    xmlns="http://apache.org/cordova/ns/plugins/1.0"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>wswPlugin</name>
+    <js-module name="wswPlugin" src="www/wswPlugin.js">
+        <clobbers target="wswPlugin" />
+    </js-module>
+    <platform name="ios">
+        <config-file parent="/*" target="config.xml">
+            <feature name="wswPlugin">
+                <param name="ios-package" value="wswPlugin" />
+                <param name="onload" value="true" />
+            </feature>
+        </config-file>
+        <header-file src="src/ios/wswPlugin.h" />
+        <source-file src="src/ios/wswPlugin.m" />
+    </platform>
+</plugin>
+

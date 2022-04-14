@@ -1,16 +1,12 @@
-/********* wswPlugin.m Cordova Plugin Implementation *******/
-
-#import <Cordova/CDV.h>
-
-@interface wswPlugin : CDVPlugin {
-  // Member variables go here.
-}
-- (void)haha:(CDVInvokedUrlCommand *)command;
-
-- (void)coolMethod:(CDVInvokedUrlCommand*)command;
-@end
+#import "wswPlugin.h"
 
 @implementation wswPlugin
+
+- (void)pluginInitialize {
+    NSLog(@"3啦啦啦啦啦啦啦");
+}
+
+
 - (void)haha:(CDVInvokedUrlCommand *)command
 {
     NSLog(@"333333");
